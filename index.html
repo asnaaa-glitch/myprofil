@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Husna ✨ | Frontend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- LOADING -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div class="logo">
+            <div class="logo-avatar">
+                <i class="fas fa-heart"></i>
+            </div>
+            <h2>Husna <span class="gradient-text">✨</span></h2>
+            <p>Frontend Developer</p>
+        </div>
+
+        <nav class="nav">
+            <a href="#about" class="nav-link active">
+                <i class="fas fa-user"></i> About Me
+            </a>
+            <a href="#skills" class="nav-link">
+                <i class="fas fa-code"></i> Skills
+            </a>
+            <a href="#goals" class="nav-link">
+                <i class="fas fa-bullseye"></i> My Goals
+            </a>
+            <a href="#projects" class="nav-link">
+                <i class="fas fa-folder"></i> My Projects
+            </a>
+        </nav>
+
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+        <!-- HERO -->
+        <section class="hero reveal">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="gradient-text">Husna</span></h1>
+                <p class="hero-subtitle">Frontend Developer & UI/UX Designer</p>
+                <p class="hero-desc">Creating pixel-perfect, responsive websites with modern animations</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('about')">
+                        <i class="fas fa-rocket"></i> Explore Work
+                    </button>
+                    <button class="btn-secondary" onclick="downloadCV()">
+                        <i class="fas fa-download"></i> Download CV
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="about" class="section card reveal">
+            <div class="section-header">
+                <span class="section-label"><i class="fas fa-heart"></i> About Me</span>
+                <h2 class="section-title">Who Am I?</h2>
+            </div>
+            <div class="about-grid">
+                   <div class="profile-card">
+
+    <div class="profile-top">
+        <img src="una.jpg.jpeg" class="avatar-img">
+        <span class="status-dot"></span>
+    </div>
+
+    <h3 class="profile-name">Asmaul Husna</h3>
+    <p class="profile-role">Frontend Developer</p>
+
+    <div class="profile-tags">
+        <span>✨ React</span>
+        <span>⚡ Next.js</span>
+        <span>🎨 Tailwind</span>
+        <span>💡 UI/UX</span>
+        <span>🖌️ Figma</span>
+    </div>
+
+    <div class="profile-contact">
+       <p><span>📍</span> Indonesia</p>
+<p><span>✉</span> husna@email.com</p>
+
+</div>
+                </div>
+                <div class="about-right">
+                    <p>
+Aku frontend developer yang suka bikin tampilan website yang clean, modern, dan enak dipakai. 
+Buatku, website bukan cuma soal tampilannya bagus, tapi juga soal kenyamanan user saat berinteraksi. 
+Karena itu, aku fokus di detail UI/UX dan animasi supaya pengalaman yang diberikan terasa lebih hidup dan berkesan.
+</p>
+                   <div class="stats-grid">
+
+    <div class="stat-item">
+        <h3 data-target="2">2+</h3>
+        <p>Years Experience</p>
+    </div>
+
+    <div class="stat-item">
+        <h3 data-target="15">2</h3>
+        <p>Projects</p>
+    </div>
+
+    <div class="stat-item">
+        <h3 data-target="100">4</h3>
+        <p>Learning Progress</p>
+    </div>
+
+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" <section id="skills" class="section card reveal">
+    <div class="section-header">
+        <span class="section-label"><i class="fas fa-star"></i> Skills</span>
+        <h2 class="section-title">Technical Skills</h2>
+    </div>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-info">
+                <span><i class="fab fa-html5"></i> HTML & CSS</span>
+                <span>95%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" data-width="95%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-info">
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span>90%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" data-width="90%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-info">
+                <span><i class="fab fa-react"></i> React</span>
+                <span>85%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" data-width="85%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-info">
+                <span><i class="fab fa-figma"></i> UI/UX Design</span>
+                <span>92%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-fill" data-width="92%"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <section id="goals" class="section card reveal">
+    <div class="section-header">
+        <span class="section-label"><i class="fas fa-bullseye"></i> My Goals</span>
+        <h2 class="section-title">My Goals</h2>
+    </div>
+
+    <div class="goals-grid">
+        <div class="goal-item">
+            <div class="goal-icon">🚀</div>
+            <div>
+                <h4>Master New Tech</h4>
+                <p>Terus belajar teknologi terbaru dan framework modern.</p>
+            </div>
+        </div>
+
+        <div class="goal-item">
+            <div class="goal-icon">🌍</div>
+            <div>
+                <h4>Work Worldwide</h4>
+                <p>Bekerja dengan klien dari seluruh dunia.</p>
+            </div>
+        </div>
+
+        <div class="goal-item">
+            <div class="goal-icon">❤️</div>
+            <div>
+                <h4>Help & Inspire</h4>
+                <p>Menginspirasi developer lain melalui karya.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section card reveal">
+    <div class="section-header">
+        <span class="section-label"><i class="fas fa-folder"></i> Projects</span>
+        <h2 class="section-title">My Projects</h2>
+    </div>
+
+    <!-- FILTER -->
+    <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- PROJECT -->
+       <section id="projects" class="section card reveal">
+    <div class="section-header">
+        <span class="section-label">My Projects</span>
+        <h2 class="section-title">Selected Works</h2>
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- DESACARE -->
+        <div class="project-card">
+            <img src="img/desacare.png" class="project-img">
+
+            <div class="project-content">
+                <h3>DesaCare</h3>
+                <p>
+                    Platform digital pelaporan masalah desa & transparansi dana 
+                    dengan sistem real-time dan UI modern.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="/desacare/index.html" target="_blank" class="project-btn">
+                    Lihat Project →
+                </a>
+            </div>
+        </div>
+
+        <!-- NETFLIX -->
+        <div class="project-card">
+            <img src="img/netflix.png" class="project-img">
+
+            <div class="project-content">
+                <h3>Netflix Clone</h3>
+                <p>
+                    Clone UI Netflix dengan fitur hover, preview film, 
+                    dan tampilan responsive modern.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <a href="/netflix/index.html" target="_blank" class="project-btn">
+                    Lihat Project →
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+        </div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
