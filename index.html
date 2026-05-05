@@ -12,6 +12,7 @@
     <!-- LOADING -->
     <div class="loader" id="loader">
         <div class="loader-circle"></div>
+        <div class="load-text">Loading...</div>
     </div>
 
     <!-- SIDEBAR -->
@@ -31,20 +32,39 @@
             <a href="#skills" class="nav-link">
                 <i class="fas fa-code"></i> Skills
             </a>
+            <a href="#experience" class="nav-link">
+                <i class="fas fa-briefcase"></i> Experience
+            </a>
             <a href="#goals" class="nav-link">
                 <i class="fas fa-bullseye"></i> My Goals
             </a>
             <a href="#projects" class="nav-link">
-                <i class="fas fa-folder"></i> My Projects
+                <i class="fas fa-folder"></i> Projects
             </a>
-        </nav>
+            <a href="#cv" class="nav-link">
+				<i class="fas fa-file-alt"></i> CV
+			</a>
+			<a href="#testimonials" class="nav-link">
+				<i class="fas fa-star"></i> Testimonials
+			</a>
+			<a href="#contact" class="nav-link">
+               <i class="fas fa-paper-plane"></i> Contact
+            </a>
 
         <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-        </div>
+    <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:as.husna06@gmail.com" title="Email Husna">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="#" onclick="openEmailForm()" title="Send Message">
+        <i class="fas fa-paper-plane"></i>
+    </a>
+</div>
     </div>
 
     <!-- MAIN CONTENT -->
@@ -52,16 +72,23 @@
         <!-- HERO -->
         <section class="hero reveal">
             <div class="hero-content">
+                <div class="hero-badge">
+                    <span>Frontend Developer</span>
+                    <div class="badge-glow"></div>
+                </div>
                 <h1 class="hero-title">Hi, I'm <span class="gradient-text">Husna</span></h1>
-                <p class="hero-subtitle">Frontend Developer & UI/UX Designer</p>
-                <p class="hero-desc">Creating pixel-perfect, responsive websites with modern animations</p>
+                <p class="hero-subtitle">Crafting beautiful & functional web experiences</p>
+                <p class="hero-desc">I create pixel-perfect, responsive websites with modern animations and smooth interactions.</p>
                 <div class="hero-buttons">
                     <button class="btn-primary" onclick="scrollToSection('about')">
                         <i class="fas fa-rocket"></i> Explore Work
                     </button>
-                    <button class="btn-secondary" onclick="downloadCV()">
-                        <i class="fas fa-download"></i> Download CV
+                    <button class="btn-secondary" onclick="scrollToSection('projects')">
+                        <i class="fas fa-folder"></i> View Projects
                     </button>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </section>
@@ -73,227 +100,464 @@
                 <h2 class="section-title">Who Am I?</h2>
             </div>
             <div class="about-grid">
-                   <div class="profile-card">
-
-    <div class="profile-top">
-        <img src="una.jpg.jpeg" class="avatar-img">
-        <span class="status-dot"></span>
-    </div>
-
-    <h3 class="profile-name">Asmaul Husna</h3>
-    <p class="profile-role">Frontend Developer</p>
-
-    <div class="profile-tags">
-        <span>✨ React</span>
-        <span>⚡ Next.js</span>
-        <span>🎨 Tailwind</span>
-        <span>💡 UI/UX</span>
-        <span>🖌️ Figma</span>
-    </div>
-
-    <div class="profile-contact">
-       <p><span>📍</span> Indonesia</p>
-<p><span>✉</span> husna@email.com</p>
-
-</div>
+                <div class="profile-card">
+                    <div class="profile-top">
+                        <img src="image/una.jpg.jpeg" alt="Husna" class="avatar-img">
+                        <span class="status-dot"></span>
+                    </div>
+                    <h3 class="profile-name">Asmaul Husna</h3>
+                    <p class="profile-role">Frontend Developer</p>
+                    <div class="profile-tags">
+                        <span>✨ React</span>
+                        <span>⚡ Next.js</span>
+                        <span>🎨 Tailwind</span>
+                        <span>💡 UI/UX</span>
+                        <span>🖌️ Figma</span>
+                    </div>
+                    <div class="profile-contact">
+                        <p><span>📍</span> Indonesia</p>
+                        <p><span>✉</span> husna@email.com</p>
+                    </div>
                 </div>
                 <div class="about-right">
                     <p>
-Aku frontend developer yang suka bikin tampilan website yang clean, modern, dan enak dipakai. 
-Buatku, website bukan cuma soal tampilannya bagus, tapi juga soal kenyamanan user saat berinteraksi. 
-Karena itu, aku fokus di detail UI/UX dan animasi supaya pengalaman yang diberikan terasa lebih hidup dan berkesan.
-</p>
-                   <div class="stats-grid">
+                        Aku frontend developer yang suka bikin tampilan website yang clean, modern, dan enak dipakai. 
+                        Buatku, website bukan cuma soal tampilannya bagus, tapi juga soal kenyamanan user saat berinteraksi. 
+                        Karena itu, aku fokus di detail UI/UX dan animasi supaya pengalaman yang diberikan terasa lebih hidup dan berkesan.
+                    </p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3 data-target="2">0</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 data-target="15">0</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3 data-target="100">0</h3>
+                            <p>Learning Progress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="stat-item">
-        <h3 data-target="2">2+</h3>
-        <p>Years Experience</p>
-    </div>
-
-    <div class="stat-item">
-        <h3 data-target="15">2</h3>
-        <p>Projects</p>
-    </div>
-
-    <div class="stat-item">
-        <h3 data-target="100">4</h3>
-        <p>Learning Progress</p>
-    </div>
-
-</div>
+        <!-- EXPERIENCE - BARU -->
+        <section id="experience" class="section card reveal">
+            <div class="section-header">
+                <span class="section-label"><i class="fas fa-briefcase"></i> Experience</span>
+                <h2 class="section-title">My Journey</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Frontend Developer</h4>
+                        <p>Freelance projects & personal portfolio development</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>UI/UX Learning</h4>
+                        <p>Mastered Figma, Tailwind CSS, and responsive design</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SKILLS -->
-        <section id="skills" <section id="skills" class="section card reveal">
-    <div class="section-header">
-        <span class="section-label"><i class="fas fa-star"></i> Skills</span>
-        <h2 class="section-title">Technical Skills</h2>
-    </div>
+        <section id="skills" class="section card reveal">
+            <div class="section-header">
+                <span class="section-label"><i class="fas fa-star"></i> Skills</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span><i class="fab fa-html5"></i> HTML & CSS</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span><i class="fab fa-react"></i> React</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-info">
+                        <span><i class="fab fa-figma"></i> UI/UX Design</span>
+                        <span>92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="92%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="skills-grid">
-
-        <div class="skill-card">
-            <div class="skill-info">
-                <span><i class="fab fa-html5"></i> HTML & CSS</span>
-                <span>95%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-fill" data-width="95%"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-info">
-                <span><i class="fab fa-js"></i> JavaScript</span>
-                <span>90%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-fill" data-width="90%"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-info">
-                <span><i class="fab fa-react"></i> React</span>
-                <span>85%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-fill" data-width="85%"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <div class="skill-info">
-                <span><i class="fab fa-figma"></i> UI/UX Design</span>
-                <span>92%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-fill" data-width="92%"></div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
+        <!-- GOALS -->
         <section id="goals" class="section card reveal">
-    <div class="section-header">
-        <span class="section-label"><i class="fas fa-bullseye"></i> My Goals</span>
-        <h2 class="section-title">My Goals</h2>
-    </div>
-
-    <div class="goals-grid">
-        <div class="goal-item">
-            <div class="goal-icon">🚀</div>
-            <div>
-                <h4>Master New Tech</h4>
-                <p>Terus belajar teknologi terbaru dan framework modern.</p>
+            <div class="section-header">
+                <span class="section-label"><i class="fas fa-bullseye"></i> My Goals</span>
+                <h2 class="section-title">Future Plans</h2>
             </div>
-        </div>
-
-        <div class="goal-item">
-            <div class="goal-icon">🌍</div>
-            <div>
-                <h4>Work Worldwide</h4>
-                <p>Bekerja dengan klien dari seluruh dunia.</p>
-            </div>
-        </div>
-
-        <div class="goal-item">
-            <div class="goal-icon">❤️</div>
-            <div>
-                <h4>Help & Inspire</h4>
-                <p>Menginspirasi developer lain melalui karya.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects" class="section card reveal">
-    <div class="section-header">
-        <span class="section-label"><i class="fas fa-folder"></i> Projects</span>
-        <h2 class="section-title">My Projects</h2>
-    </div>
-
-    <!-- FILTER -->
-    <div class="project-filter">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="ui">UI/UX</button>
-    </div>
-
-    <div class="projects-grid">
-
-        <!-- PROJECT -->
-       <section id="projects" class="section card reveal">
-    <div class="section-header">
-        <span class="section-label">My Projects</span>
-        <h2 class="section-title">Selected Works</h2>
-    </div>
-
-    <div class="projects-grid">
-
-        <!-- DESACARE -->
-       <section id="projects" class="section card reveal">
-    <div class="section-header">
-        <span class="section-label"><i class="fas fa-folder"></i> Projects</span>
-        <h2 class="section-title">My Projects</h2>
-    </div>
-
-    <div class="projects-grid">
-
-        <!-- DESACARE -->
-        <div class="project-card">
-            <img src="image/desacare.jpeg" class="project-img">
-
-            <div class="project-content">
-                <h3>DesaCare</h3>
-                <p>Platform digital pelaporan masalah desa & transparansi dana.</p>
-
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
+            <div class="goals-grid">
+                <div class="goal-item">
+                    <div class="goal-icon">🚀</div>
+                    <div>
+                        <h4>Master New Tech</h4>
+                        <p>Terus belajar teknologi terbaru dan framework modern.</p>
+                    </div>
                 </div>
-
-                <a href="https://asnaaa-glitch.github.io/desacare/" target="_blank" class="project-btn">
-    Lihat Project →
-</a>
-            </div>
-        </div>
-
-        <!-- NETFLIX -->
-        <div class="project-card">
-            <img src="image/netflix.jpeg" class="project-img">
-
-            <div class="project-content">
-                <h3>Netflix Clone</h3>
-                <p>Clone UI Netflix dengan tampilan modern & responsive.</p>
-
-                <div class="project-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JS</span>
+                <div class="goal-item">
+                    <div class="goal-icon">🌍</div>
+                    <div>
+                        <h4>Work Worldwide</h4>
+                        <p>Bekerja dengan klien dari seluruh dunia.</p>
+                    </div>
                 </div>
+                <div class="goal-item">
+                    <div class="goal-icon">❤️</div>
+                    <div>
+                        <h4>Help & Inspire</h4>
+                        <p>Menginspirasi developer lain melalui karya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-               <a href="https://asnaaa-glitch.github.io/-netflix/" target="_blank" class="project-btn">
-    Lihat Project →
-</a>
+        <!-- PROJECTS -->
+        <section id="projects" class="section card reveal">
+            <div class="section-header">
+                <span class="section-label"><i class="fas fa-folder"></i> Projects</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <img src="image/desacare.jpeg" alt="DesaCare" class="project-img">
+                    <div class="project-content">
+                        <h3>DesaCare</h3>
+                        <p>Platform digital pelaporan masalah desa & transparansi dana.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://asnaaa-glitch.github.io/desacare/" target="_blank" class="btn-sm">
+                                🔗 Live Demo
+                            </a>
+                            <a href="https://github.com/asnaaa-glitch/desacare" target="_blank" class="btn-sm secondary">
+                                💻 GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <img src="image/netflix.jpeg" alt="Netflix Clone" class="project-img">
+                    <div class="project-content">
+                        <h3>Netflix Clone</h3>
+                        <p>Clone UI Netflix dengan tampilan modern & responsive.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://asnaaa-glitch.github.io/-netflix/" target="_blank" class="btn-sm">
+                                🔗 Live Demo
+                            </a>
+                            <a href="https://github.com/asnaaa-glitch/-netflix" target="_blank" class="btn-sm secondary">
+                                💻 GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS - BARU -->
+        <section id="testimonials" class="section card reveal">
+            <div class="section-header">
+                <span class="section-label"><i class="fas fa-star"></i> Testimonials</span>
+                <h2 class="section-title">What People Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Husna delivered amazing work! Clean code and beautiful design."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/50" alt="Client">
+                        <div>
+                            <h4>Rina K.</h4>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excellent UI/UX skills. Very responsive and professional."</p>
+                    <div class="author">
+                        <img src="https://i.pravatar.cc/50" alt="Client">
+                        <div>
+                            <h4>Andi S.</h4>
+                            <span>Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<!-- CV SECTION - TAMBAHAN BARU -->
+<section id="cv" class="section card reveal">
+    <div class="section-header">
+        <span class="section-label"><i class="fas fa-file-alt"></i> Curriculum Vitae</span>
+        <h2 class="section-title">My Resume</h2>
+    </div>
+    
+    <div class="cv-container">
+        <!-- LEFT - SUMMARY & SKILLS -->
+        <div class="cv-left">
+            <div class="cv-summary">
+                <h3>Professional Summary</h3>
+                <p>
+                    Passionate Frontend Developer with 2+ years of experience creating 
+                    responsive, modern websites. Skilled in React, Tailwind CSS, and UI/UX 
+                    design. Committed to clean code and exceptional user experiences.
+                </p>
+            </div>
+            
+            <div class="cv-skills">
+                <h3>Core Skills</h3>
+                <ul>
+                    <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript (ES6+)</li>
+                    <li><i class="fab fa-react"></i> React.js</li>
+                    <li><i class="fab fa-sass"></i> Tailwind CSS</li>
+                    <li><i class="fab fa-figma"></i> Figma & UI/UX</li>
+                    <li><i class="fas fa-git-alt"></i> Git & GitHub</li>
+                </ul>
+            </div>
+            
+            <div class="cv-contact">
+                <h3>Contact</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>husna@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+62 812-3456-7890</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Indonesia</span>
+                </div>
             </div>
         </div>
-
-    </div>
-</section>
-
-    </div>
-</section>
+        
+        <!-- RIGHT - EXPERIENCE & EDUCATION -->
+        <div class="cv-right">
+            <div class="cv-experience">
+                <h3>Experience</h3>
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <h4>Frontend Developer (Freelance)</h4>
+                        <span class="exp-date">2023 - Present</span>
+                    </div>
+                    <p>Developed responsive websites and web applications for various clients. Collaborated with designers to create pixel-perfect UIs.</p>
+                    <ul class="exp-skills">
+                        <li>React, Tailwind CSS, JavaScript</li>
+                        <li>Responsive Design & Animations</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="exp-header">
+                        <h4>UI/UX Design Intern</h4>
+                        <span class="exp-date">2023</span>
+                    </div>
+                    <p>Assisted in designing user interfaces using Figma. Created wireframes and prototypes for web applications.</p>
+                </div>
+            </div>
+            
+            <div class="cv-education">
+                <h3>Education</h3>
+                <div class="edu-item">
+                    <h4>Frontend Development Bootcamp</h4>
+                    <span class="edu-date">2023</span>
+                    <p>Intensive 6-month program focusing on modern web development</p>
+                </div>
+                <div class="edu-item">
+                    <h4>Computer Science</h4>
+                    <span class="edu-date">2020 - 2023</span>
+                    <p>University of Technology, Indonesia</p>
+                </div>
+            </div>
         </div>
-
+    </div>
+    
+    <!-- DOWNLOAD BUTTONS -->
+    <div class="cv-actions">
+        <button class="btn-primary" onclick="downloadCV()">
+            <i class="fas fa-download"></i> Download CV (PDF)
+        </button>
+        <button class="btn-secondary" onclick="printCV()">
+            <i class="fas fa-print"></i> Print CV
+        </button>
     </div>
 </section>
+<!-- CONTACT SECTION - TERHUBUNG EMAIL -->
+<section id="contact" class="section card reveal">
+    <div class="section-header">
+        <span class="section-label"><i class="fas fa-paper-plane"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Have a project? I'd love to hear about it!</p>
+    </div 
+        /* =======================
+   CONTACT ICONS - DESIGN BARU
+======================= */
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-<script src="script.js"></script>
+/* EMAIL ICON */
+.contact-icon:has(i.fa-envelope) {
+    background: linear-gradient(135deg, #ea580c, #f97316);
+    box-shadow: 0 10px 30px rgba(234, 88, 12, 0.4);
+}
+
+.contact-icon:has(i.fa-envelope):hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 20px 40px rgba(234, 88, 12, 0.6);
+}
+
+/* LOCATION ICON */
+.contact-icon:has(i.fa-map-marker-alt) {
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+}
+
+.contact-icon:has(i.fa-map-marker-alt):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(139, 92, 246, 0.6);
+}
+
+/* CLOCK ICON */
+.contact-icon:has(i.fa-clock) {
+    background: linear-gradient(135deg, #06b6d4, #0ea5e9);
+    box-shadow: 0 10px 30px rgba(6, 182, 212, 0.4);
+}
+
+.contact-icon:has(i.fa-clock):hover {
+    transform: scale(1.05) rotate(-5deg);
+    box-shadow: 0 20px 40px rgba(6, 182, 212, 0.6);
+}
+
+/* ICON ANIMASI */
+.contact-icon i {
+    font-size: 1.5rem;
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.contact-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.contact-icon:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* RESPONSIVE ICON */
+@media (max-width: 768px) {
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contact-icon i {
+        font-size: 1.3rem;
+    }
+}
+        
+        <!-- CONTACT FORM -->
+        <form class="contact-form" id="contactForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="your@email.com" required>
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" id="subject" placeholder="Subject">
+                <label for="subject">Subject</label>
+            </div>
+            
+            <div class="form-group">
+                <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                <label for="message">Message</label>
+            </div>
+            
+            <button type="submit" class="btn-primary full-width">
+                <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+        </form>
+    </div>
+</section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
