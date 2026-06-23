@@ -324,9 +324,11 @@ window.addEventListener('resize', () => {
 let ticking = false;
 function requestTick() {
     if (!ticking) {
-        requestAnimationFrame(updateActiveNav);
+        requestAnimationFrame(() => {
+            updateActiveNav();
+            ticking = false;
+        });
         ticking = true;
-        ticking = false;
     }
 }
 
